@@ -1,0 +1,23 @@
+/* first mobile */
+#container{
+    height: 100vh;
+    padding-top: 20px;
+  }
+
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 992px) {
+    #container{
+      width: 100%;
+      padding-top: 45px;
+    }
+  
+    
+    
+  }

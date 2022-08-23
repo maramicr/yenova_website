@@ -1,0 +1,111 @@
+/* footer ---------------------------------- */
+.container__footer{
+    max-width: 90vw;
+    margin: auto;
+  }
+    .footer{
+      margin-top: auto;
+      display: block;
+      background-color: var(--menu-background-color);
+      padding: 5% 0;
+    }
+  
+  .footer__row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+  }
+  
+  .footer__col{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  
+  .footer__col h4{
+    font-size: 1em;
+    color: var(--text-color-inverse);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer__col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--primary-color);
+    height: 2px;
+    box-sizing: border-box;
+    width: 32px;
+  }
+  
+  .footer__col ul li:not(last-child){
+    margin-bottom: 12px;
+  }
+  
+  .footer__col ul li a{
+    font-size: 1em;
+    color: var(--text-color-inverse);
+    font-weight: 300;
+    display: block;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+  } 
+  
+  .footer__col ul li a:hover{
+    color: var(--text-color-inverse);
+    padding-left: 6px;
+  }
+  
+  .footer__col .social__links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--shadow-color);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--text-color-inverse);
+    transition: all 0.5s ease;
+  }
+  
+  .footer__col .social__links a:hover{
+    color: var(--secondary-color);
+    background-color: var(--navbar-color);
+  }
+  
+  .outer__footer{
+    padding: 15px;
+    text-align: center;
+    color: var(--text-color-inverse);
+    font-size: 1em;
+    background-color: var(--submenu-background-color);
+    transition: all 0.5s ease;
+  }
+  
+  @media screen and (min-width:1024px){
+    .footer{
+      padding-top: 3%;
+      padding-bottom: 1%;
+    }
+
+    .footer__row{
+      flex-direction: row;
+    }
+  
+    .footer__col{
+      width: 25%;
+      padding: 0 15px;
+    }
+  
+    .outer__footer:hover{
+      color: var(--secondary-color);
+    }
+  }
+  
+  /* end footer ---------------------------------- */
+  

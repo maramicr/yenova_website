@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web Yenova</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+
+    <!-- awesome -->
+    <script src="https://kit.fontawesome.com/71af4709ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar start------------------------------------->
+    <header class="top__header">
+
+        <!-- botón toggle menú-->
+        <span class="navbar" id="navbar-icon">
+            <!-- logotipo navbar--------------->
+            <a class="navbar__brand" href="index.html">
+                <span>
+
+                    <img src="assets/img/logo_yenova.png" alt="logo Yenova" class="logo">
+
+                </span>
+            </a>
+            <span id="navbar-logo--text">Yenova</span>
+
+            <i class="fas fa-bars" aria-hidden="true" class="toggle__icon" id="menu-btn"></i>
+        </span>
+
+        <!-- menu-contenedor ----------------->
+        <nav class="navbar__main" id="menu">
+
+            <!-- logotipo menu-navbar--------------->
+            <a class="navbar__brand" href="index.html" id="brand">
+                <img src="assets/img/logo_yenova.png" alt="logo Yenova" class="logo">
+                <span class="brillo"></span>
+            </a>
+            <span id="logo-text">Yenova</span>
+
+            <!-- lista de menú -------------->
+            <ul class="navbar__menu" id="list-menu">
+
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Acerca de</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link">Contacto</a>
+                </li>
+                <li class="menu__item">
+                    <a href="shopcar.html" class="menu__link btn__disable">Carrito<i class="fa-solid fa-cart-plus"></i></a>
+                </li>
+
+                <!-- submenu----------- -->
+                <li class="menu__item dropdown__submenu">
+                    <a href="#" class="menu__link submenu__btn">Productos <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="shop.html" class="submenu__link">Corte láser</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="shop.html" class="submenu__link">Resina</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="shop.html" class="submenu__link">Diseño gráfico</a>
+                        </li>
+                        <!-- <li class="submenu__item">
+                            <a href="#" class="submenu__link">Otra categoría</a>
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li class="menu__item">
+                    <a href="videos.html" class="menu__link">Videos</a>
+                </li>
+
+                <!-- <li class="menu__item">
+                    <a href="#" class="menu__link">Otros</a>
+                </li> -->
+                <!-- fin submenu ---------------------------- -->
+
+            </ul>
+
+        </nav>
+    </header>
+    <!-- navbar end ------------------------------------>
+
+    <!-- //////////////////////////////////////////////////////////////////// -->
+
+
+    <!-- start info -->
+    <div class="container">
+        <div id="blur-area"></div>
+        <div class="text__box">
+            <h1>Qué es <span>Yenova</span></h1>
+            <p>Es innovación, creatividad y calidad integrados en una idea. <br>
+                Un proyecto en crecimiento con el fin de entregarle a usted un producto desarrollado a su gusto, con las bases de la artesanía tradicional pero terminado con nuevas tecnologías. 
+                Contamos con el respaldo que da haber sido capacitados por el INA, así como más de cinco años de experiencia con diferentes técnicas.
+                Esperamos que encuentre en nuestro catálogo de productos la idea que usted tanto desea, de lo contrario, permítanos saber cuál es el producto que necesita para poder crearlo juntos. <br> 
+                Muchas gracias!.
+            </p>
+            <button type="button">
+                <a href="shop.html">Ver productos</a>
+            </button>
+        </div>
+        
+    </div>
+        
+
+    <!-- end info -->
+
+    <!-- footer start ------------------------------------------------->
+
+    <footer class="footer">
+        <div class="container__footer">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <h4>Yenova</h4>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <!-- <li><a href="#">Políticas</a></li> -->
+                        <!-- <li><a href="#">Afiliados</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <!-- <li><a href="#">FAQ</a></li> -->
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Opciones de pago</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="shop.html">Corte láser</a></li>
+                        <li><a href="shop.html">Resina</a></li>
+                        <li><a href="shop.html">Diseño gráfico</a></li>
+                        <!-- <li><a href="#">Otros</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Síguenos</h4>
+                    <div class="social__links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outer__footer">
+            Copyright &copy; coffeedevelopercr. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- footer end ------------------------------------------------->
+
+
+    <!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--  -->
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script defer src="js/about.js"></script>
+    <script defer src="js/navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+/* navbar ----------------------------------*/
+.navbar {
+    background-color: var(--navbar-color);
+    padding: 0 60px;
+    display: block;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    box-shadow: 0 0 0 12px var(--primary-color);
+  }
+  
+  .navbar__brand img{
+    width: 60px;
+  }
+  
+  #navbar-logo--text {
+    font-family: var(--primary-font-family);
+    color: var(--primary-color-inverse);
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  
+  #menu-btn {
+    padding-top: 6px;
+    padding-left: 10px;
+    color: var(--primary-color);
+  }
+  
+  /* menu --------------- */
+  .navbar__main {
+    background-color: var(--menu-background-color);
+    width: 100%;
+  
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .navbar__main #brand,
+  .navbar__main #logo-text {
+    display: none;
+  }
+  
+  .menu__link {
+    display: block;
+    line-height: 2.5em;
+    font-size: 1.4em;
+    text-align: center;
+    color: var(--text-color-inverse);
+    transition: all 0.3s ease;
+  }
+  
+  .menu__link:hover {
+    background-color: var(--primary-color);
+  }
+  
+  /* submenu ---------------- */
+  .submenu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--submenu-background-color);
+  }
+  
+  .submenu__link {
+    display: block;
+    line-height: 2.5em;
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--text-color-inverse);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .submenu .submenu__link:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .mostrar {
+    opacity: 1;
+    height: 100vh;
+  }
+
+  .btn__disable{
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  /* media query -----------------------------------------------*/
+  @media (min-width: 1024px) {
+    .navbar {
+      display: none;
+    }
+  
+    .navbar__main {
+      background-color: var(--navbar-color);
+      box-shadow: 0 0 0 12px var(--primary-color);
+      margin-bottom: 24px;
+    }
+  
+    .navbar__main #brand,
+    .navbar__main #logo-text {
+      display: block;
+    }
+  
+    .navbar__main #logo-text {
+      color: var(--primary-color);
+      display: none;
+    }
+  
+    .navbar__brand {
+      display: flex;
+      height: 12vh;
+    }
+  
+    .navbar__brand img{
+      width: 100%;
+    }
+  
+    /* efecto brillo */
+    .navbar__brand span {
+      position: absolute;
+      width: 24%;
+      height: 12vh;
+      top: 0;
+      left: 0px;
+      background: transparent;
+      opacity: 0.5;
+      overflow: hidden;
+    }
+  
+    .navbar__brand span img {
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .navbar__brand span::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 100%;
+      background-color: var(--menu-background-color);
+      opacity: 0.3;
+      top: 0;
+      left: -100px;
+      transform: skewX(-30deg);
+      transition: all 0.3s ease;
+    }
+  
+    .navbar__brand span:hover:before {
+      left: 120%;
+    }
+  
+    /*-------------------------------------------*/
+  
+    .menu__link {
+      color: var(--text-color);
+      margin-top: 6px;
+      padding: 0 20px;
+      border-radius: 50px;
+      margin: 0 12px;
+    }
+  
+    .menu__link:hover {
+      color: var(--text-color-inverse);
+    }
+  
+    .navbar__main img {
+      position: relative;
+      height: 100%;
+      margin-left: 6px;
+      padding-left: 6px;
+    }
+  
+    #logo-text {
+      padding: 0 6px;
+      font-family: var(--primary-font-family);
+      font-size: 2em;
+      color: var(--text-color-inverse);
+    }
+  
+    .navbar__main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      text-align: left;
+  
+      opacity: 1;
+      height: 100%;
+      overflow: visible;
+      transition: opacity 0.7s ease-in;
+    }
+  
+    .navbar__menu {
+      display: flex;
+    }
+  
+    /* submenu ---------------------------------------------- */
+  
+    .dropdown__menu {
+      position: relative;
+    }
+  
+    .submenu {
+      overflow: visible;
+      position: absolute;
+      top: 12vh;
+      width: 220px;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    .submenu__link {
+      background-color: var(--submenu-background-color);
+      box-shadow: 12px 12px var(--shadow-color);
+      border-radius: 10px;
+    }
+  
+    .dropdown__submenu:hover .submenu {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s ease;
+    }
+  }
