@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-
 /*       */
 .main{
     height: 100vh;
@@ -47,7 +46,7 @@
     border: none;
     font-size: 1.3em;
     padding: 15px 30px;
-    border-radius: 30px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -63,8 +62,7 @@
 }
 
 .home__btn a:hover{
-    color: var(--text-color);
-    
+    color: var(--text-color);    
 }
 
 

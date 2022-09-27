@@ -124,7 +124,7 @@
     }
   
     /* efecto brillo */
-    .navbar__brand span {
+    /* .navbar__brand span {
       position: absolute;
       width: 24%;
       height: 12vh;
@@ -133,9 +133,9 @@
       background: transparent;
       opacity: 0.5;
       overflow: hidden;
-    }
+    } */
   
-    .navbar__brand span img {
+    /* .navbar__brand span img {
       width: 100%;
       object-fit: cover;
     }
@@ -155,7 +155,7 @@
   
     .navbar__brand span:hover:before {
       left: 120%;
-    }
+    } */
   
     /*-------------------------------------------*/
   
@@ -163,7 +163,7 @@
       color: var(--text-color);
       margin-top: 6px;
       padding: 0 20px;
-      border-radius: 50px;
+      border-radius: 6px;
       margin: 0 12px;
     }
   
@@ -222,7 +222,7 @@
     .submenu__link {
       background-color: var(--submenu-background-color);
       box-shadow: 12px 12px var(--shadow-color);
-      border-radius: 10px;
+      /* border-radius: 10px; */
     }
   
     .dropdown__submenu:hover .submenu {
